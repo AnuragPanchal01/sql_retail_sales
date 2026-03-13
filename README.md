@@ -225,3 +225,6 @@ Anurag Panchal
 
 ***LinkedIn:***
 https://www.linkedin.com/in/panchalanurag/
+
+***Gmail***
+anuragpanchal002@gmail.com
