@@ -9,6 +9,13 @@
 - Common Table Expressions (CTE)
 - Business Data Analysis
 
+## Tools Used
+
+- SQL Server
+- SQL
+- Data Analysis
+- GitHub
+
 ## Project Overview
 
 This project analyzes a retail sales dataset using SQL to extract business insights.
@@ -18,7 +25,7 @@ The dataset contains information about customer transactions such as sales date,
 
 ## Database & Table Structure
 
-**Database**: `sql_project_p1`
+**Database**: `sql_project_p1`  
 **Table**: `retail_sales`
 
 | Column | Description |
@@ -67,7 +74,7 @@ WITH (
 );
 ```
 
-### Seeing top 10 rows
+### View Top 10 Rows
 
 ```sql
 SELECT top 10 * from retail_sales;
@@ -232,11 +239,9 @@ as
 - **Customer Insights**: Reports on top customers and unique customer counts per category.
 
 
-## Author 
-Anurag Panchal
+## Author
 
-**LinkedIn:**
-https://www.linkedin.com/in/panchalanurag/
+**Anurag Panchal**
 
-**Gmail**
-anuragpanchal002@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/panchalanurag/  
+📧 Email: anuragpanchal002@gmail.com
