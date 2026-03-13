@@ -1,6 +1,15 @@
 # SQL Retail Sales Analysis Project
 
-##Project Overview
+## Skills Demonstrated
+
+- SQL Data Cleaning
+- Data Exploration
+- Aggregations
+- Window Functions
+- Common Table Expressions (CTE)
+- Business Data Analysis
+
+## Project Overview
 
 This project analyzes a retail sales dataset using SQL to extract business insights.
 The goal of the project is to practice data cleaning, data exploration, and business analysis using SQL queries.
@@ -9,8 +18,8 @@ The dataset contains information about customer transactions such as sales date,
 
 ## Database & Table Structure
 
-***Database***: `sql_project_p1`
-***Table***: `retail_sales`
+**Database**: `sql_project_p1`
+**Table**: `retail_sales`
 
 | Column | Description |
 |------|-------------|
@@ -27,25 +36,27 @@ The dataset contains information about customer transactions such as sales date,
 | total_sale | Total sale value |
 
 ```sql
-CREATE DATABASE p1_retail_db;
+CREATE DATABASE sql_project_p1;
+USE sql_project_p1;
 
+--Creating Table
 CREATE TABLE retail_sales
 (
-    transactions_id INT PRIMARY KEY,
-    sale_date DATE,	
-    sale_time TIME,
-    customer_id INT,	
-    gender VARCHAR(10),
-    age INT,
-    category VARCHAR(35),
-    quantity INT,
-    price_per_unit FLOAT,	
-    cogs FLOAT,
-    total_sale FLOAT
+    transactions_id	int primary key,
+    sale_date DATE	,
+    sale_time Time,
+    customer_id int ,
+    gender varchar(15),
+    age int ,
+    category varchar(15),	
+    quantiy int,
+    price_per_unit DECIMAL(10,2),
+    cogs DECIMAL(10,2),
+    total_sale DECIMAL(10,2)
 );
 ```
 
-###Inserting data to retail_sales table
+### Inserting data to retail_sales table
 
 ```sql
 BULK INSERT retail_sales
@@ -53,7 +64,8 @@ FROM '/tmp/retail_sales.csv'
 WITH (
     FORMAT='CSV',
     FIRSTROW = 2
-);```
+);
+```
 
 ### Seeing top 10 rows
 
@@ -223,8 +235,8 @@ as
 ## Author 
 Anurag Panchal
 
-***LinkedIn:***
+**LinkedIn:**
 https://www.linkedin.com/in/panchalanurag/
 
-***Gmail***
+**Gmail**
 anuragpanchal002@gmail.com
